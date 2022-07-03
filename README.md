@@ -1,2 +1,2 @@
-# agurns
-Landing Page for AGU.com
+# fancifuldesignco
+FancifulDesignCo.com

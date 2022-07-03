@@ -1,0 +1,204 @@
+
+/* CSS Resets and general stuff*/
+
+html, body {
+    height: 100%;
+	height: 100vh;
+    height: calc(var(--vh, 1vh) *100);
+	font-family: 'Proza Libre', sans-serif;
+    font-size: 1.1em;
+	color: #555555;
+    margin: 0;
+}
+
+h1,h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #333333;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h1 {
+     font-size: 3em;
+     line-height: 1.3em;
+     color: #575757;
+     padding-bottom: 30px;
+    
+}
+
+
+p,a,img {
+    margin-top: 5px;
+}
+
+
+
+img {
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+
+.button {
+    border: 1px solid #111111;
+    padding: 5px 3px 5px 3px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family:'Proza Libre', sans-serif;
+}
+
+.button:hover {
+  border:  #222222;
+   
+}
+
+
+/* Page Sections and general layout */
+
+.wrapper {
+
+	
+}
+
+.section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    #section1 {
+        background-image: url("/img/ag_background.jpeg");
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+
+    #section2{
+       flex-direction: row;
+       justify-content: center;
+    }
+
+        .center-box {
+            text-align: center;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-self: center;
+
+         }
+
+         .center-box img {
+            align-self: center;
+         }
+
+        
+
+
+.box {
+    background-color: white;
+    width: 33%;
+	padding: 30px 20px 30px 20px;
+    flex-direction: column;
+    align-self: left;
+    vertical-align: center;
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+    border: 2px solid #77777736;
+}
+
+
+
+
+.box div {
+	padding: 0 20px 0 0;
+    display: flex;
+    align-self: center;
+}
+
+
+
+/* Form Stuff */
+
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid;
+    border-color: #B2C7D6;
+    padding: 2px;
+    margin-bottom: 10px;
+    width: 70%;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 14px;}
+
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #628fb0;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+
+
+textarea {
+    border: none;
+    border-bottom: 1px solid;
+    border-color: #B2C7D6;
+    padding: 2px;
+    margin-bottom: 10px;
+    width: 70%;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 14px;
+}
+
+
+textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #628fb0;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+
+
+ @media only screen and (max-width:768px) {
+
+    .center-box {
+        width: 85%;
+    }
+
+    .box {
+        width: 85%;
+        margin: auto;
+        align-self: center;
+    }
+
+    .section {
+        height: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) *100);
+    }
+}
