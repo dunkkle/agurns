@@ -105,10 +105,13 @@ a.button {
 }
 
 a.button img {
-    border-bottom:  2px solid #ffffff;
+    border: 3px solid #8CC63F;
+    padding: 12px 28px;
+    border-radius: 10px;
 }
+
     a.button img:hover {
-        border-bottom:  2px solid #8CC63F;
+        border-bottom:  5px solid #8CC63F;
     }
 
 
